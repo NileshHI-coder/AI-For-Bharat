@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.logo i {
+    font-size: 3rem;
+    background: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #fff, #f0f0f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* Cards */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.selection-section, .results-section {
+    margin-bottom: 40px;
+}
+
+/* Selection Section */
+.input-group {
+    margin: 30px 0;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+#careerSelect {
+    width: 100%;
+    padding: 18px 50px 18px 20px;
+    font-size: 1.1rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 15px;
+    background: white;
+    transition: all 0.3s ease;
+    appearance: none;
+}
+
+#careerSelect:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.select-wrapper i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+    background: #f8f9fa;
+    color: #667eea;
+    padding: 12px 24px;
+}
+
+.btn-secondary:hover {
+    background: #e9ecef;
+    transform: translateY(-1px);
+}
+
+/* Results Section */
+.career-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.career-header h2 {
+    color: #333;
+    font-size: 2.2rem;
+}
+
+.career-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.info-card {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #667eea;
+}
+
+.info-card.highlight {
+    border-left-color: #28a745;
+    background: linear-gradient(135deg, #f0f8ff, #e8f5e8);
+}
+
+.info-card h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.info-card ul, .info-card ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-card li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+}
+
+.info-card li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+.info-card ol li:before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    background: #667eea;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    left: -5px;
+    margin-right: 10px;
+}
+
+/* AI Chatbot */
+.ai-chat-section {
+    border-top: 2px solid #e9ecef;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.chat-messages {
+    background: #f8f9fa;
+    height: 300px;
+    border-radius: 15px;
+    padding: 20px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 1px solid #e9ecef;
+}
+
+.chat-message {
+    margin-bottom: 15px;
+    padding: 12px 18px;
+    border-radius: 20px;
+    max-width: 80%;
+}
+
+.chat-message.user {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    margin-left: auto;
+    text-align: right;
+}
+
+.chat-message.ai {
+    background: white;
+    border: 1px solid #e9ecef;
+    margin-right: auto;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+
+#chatInput {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#chatInput:focus {
+    border-color: #667eea;
+}
+
+#sendBtn {
+    width: 50px;
+    border: none;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#sendBtn:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .logo h1 {
+        font-size: 2rem;
+    }
+    
+    .career-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .career-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .card {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .logo i {
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+}

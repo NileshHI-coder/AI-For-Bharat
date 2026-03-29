@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Mentor AI - Career Guidance System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <h1>Smart Mentor AI</h1>
+            </div>
+            <p class="subtitle">Your AI-Powered Career Guidance System</p>
+        </header>
+
+        <!-- Main Selection Section -->
+        <section class="selection-section" id="selectionSection">
+            <div class="card">
+                <h2><i class="fas fa-search"></i> Find Your Perfect Career</h2>
+                <p>Answer one simple question: What career interests you most?</p>
+                
+                <div class="input-group">
+                    <label for="careerSelect">Choose your career:</label>
+                    <div class="select-wrapper">
+                        <select id="careerSelect">
+                            <option value="">Select a career...</option>
+                        </select>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                
+                <button id="getGuidanceBtn" class="btn-primary">
+                    <i class="fas fa-rocket"></i> Get Career Guidance
+                </button>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section" id="resultsSection" style="display: none;">
+            <div class="card">
+                <div class="career-header">
+                    <h2 id="careerTitle"></h2>
+                    <button id="backBtn" class="btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Back to Selection
+                    </button>
+                </div>
+
+                <div class="career-content">
+                    <!-- Description -->
+                    <div class="info-card">
+                        <h3><i class="fas fa-info-circle"></i> Career Overview</h3>
+                        <p id="careerDescription"></p>
+                    </div>
+
+                    <!-- Salary -->
+                    <div class="info-card highlight">
+                        <h3><i class="fas fa-dollar-sign"></i> Salary Range</h3>
+                        <p id="salaryRange"></p>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="info-card">
+                        <h3><i class="fas fa-tools"></i> Required Skills</h3>
+                        <ul id="requiredSkills"></ul>
+                    </div>
+
+                    <!-- Roadmap -->
+                    <div class="info-card">
+                        <h3><i class="fas fa-map-signs"></i> Learning Roadmap</h3>
+                        <ol id="roadmapSteps"></ol>
+                    </div>
+
+                    <!-- Courses -->
+                    <div class="info-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Recommended Courses</h3>
+                        <ul id="recommendedCourses"></ul>
+                    </div>
+
+                    <!-- Future Scope -->
+                    <div class="info-card highlight">
+                        <h3><i class="fas fa-chart-line"></i> Future Scope</h3>
+                        <p id="futureScope"></p>
+                    </div>
+                </div>
+
+                <!-- AI Chatbot Section -->
+                <div class="ai-chat-section">
+                    <h3><i class="fas fa-robot"></i> Ask AI Mentor</h3>
+                    <div class="chat-container">
+                        <div class="chat-messages" id="chatMessages"></div>
+                        <div class="chat-input">
+                            <input type="text" id="chatInput" placeholder="Ask anything about this career...">
+                            <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

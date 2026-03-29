@@ -1,0 +1,283 @@
+[
+  {
+    "id": 1,
+    "career_name": "Software Engineer",
+    "description": "Software Engin design, develop, and maintain software applications across platforms.",
+    "required_skills": [
+      "JavaScript",
+      "Python/Java",
+      "DSA",
+      "Git",
+      "Problem Solving",
+      "APIs",
+      "Databases",
+      "Cloud"
+    ],
+    "roadmap_steps": [
+      "Learn HTML, CSS, JS",
+      "Backend (Node/Python)",
+      "DSA",
+      "Build projects",
+      "Git & Cloud",
+      "Apply for jobs"
+    ],
+    "average_salary": {
+      "min": 500000,
+      "max": 3000000
+    },
+    "future_scope": "Excellent growth with AI, cloud, and web3 boom.",
+    "recommended_courses": [
+      {
+        "title": "The Web Developer Bootcamp",
+        "platform": "Udemy"
+      },
+      {
+        "title": "CS50",
+        "platform": "Harvard"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "career_name": "Data Scientist",
+    "description": "Analyze data and build ML models to solve business problems.",
+    "required_skills": [
+      "Python",
+      "Statistics",
+      "ML",
+      "SQL",
+      "Visualization"
+    ],
+    "roadmap_steps": [
+      "Python + Pandas",
+      "Statistics",
+      "SQL",
+      "ML",
+      "Projects",
+      "Apply jobs"
+    ],
+    "average_salary": {
+      "min": 700000,
+      "max": 3500000
+    },
+    "future_scope": "High demand in every industry.",
+    "recommended_courses": [
+      {
+        "title": "Data Science Professional Certificate",
+        "platform": "Coursera"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "career_name": "AI/ML Engineer",
+    "description": "Build and deploy machine learning models in production.",
+    "required_skills": [
+      "Python",
+      "TensorFlow",
+      "Deep Learning",
+      "MLOps"
+    ],
+    "roadmap_steps": [
+      "Python & ML",
+      "Deep Learning",
+      "Deployment",
+      "Projects",
+      "Cloud AI"
+    ],
+    "average_salary": {
+      "min": 800000,
+      "max": 4500000
+    },
+    "future_scope": "Future-proof career.",
+    "recommended_courses": [
+      {
+        "title": "Deep Learning Specialization",
+        "platform": "Coursera"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "career_name": "Doctor",
+    "description": "Diagnose and treat patients in healthcare sector.",
+    "required_skills": [
+      "Medical Knowledge",
+      "Communication",
+      "Decision Making"
+    ],
+    "roadmap_steps": [
+      "12th PCB",
+      "NEET",
+      "MBBS",
+      "PG",
+      "Practice"
+    ],
+    "average_salary": {
+      "min": 800000,
+      "max": 5000000
+    },
+    "future_scope": "Always in demand.",
+    "recommended_courses": []
+  },
+  {
+    "id": 5,
+    "career_name": "Lawyer",
+    "description": "Provide legal advice and represent clients.",
+    "required_skills": [
+      "Legal Research",
+      "Argumentation",
+      "Drafting"
+    ],
+    "roadmap_steps": [
+      "12th",
+      "CLAT",
+      "LLB",
+      "AIBE",
+      "Practice"
+    ],
+    "average_salary": {
+      "min": 400000,
+      "max": 3000000
+    },
+    "future_scope": "Essential service.",
+    "recommended_courses": []
+  },
+  {
+    "id": 6,
+    "career_name": "Civil Engineer",
+    "description": "Design and build infrastructure projects.",
+    "required_skills": [
+      "AutoCAD",
+      "Structural Analysis",
+      "Project Management"
+    ],
+    "roadmap_steps": [
+      "BTech Civil",
+      "CAD tools",
+      "Internship",
+      "Projects",
+      "Jobs"
+    ],
+    "average_salary": {
+      "min": 400000,
+      "max": 2000000
+    },
+    "future_scope": "Infrastructure growth.",
+    "recommended_courses": []
+  },
+  {
+    "id": 7,
+    "career_name": "Chartered Accountant",
+    "description": "Manage accounting, auditing, and taxation.",
+    "required_skills": [
+      "Accounting",
+      "Taxation",
+      "Excel",
+      "Audit"
+    ],
+    "roadmap_steps": [
+      "CA Foundation",
+      "CA Inter",
+      "Articleship",
+      "CA Final",
+      "Practice"
+    ],
+    "average_salary": {
+      "min": 700000,
+      "max": 4000000
+    },
+    "future_scope": "Finance always needed.",
+    "recommended_courses": []
+  },
+  {
+    "id": 8,
+    "career_name": "Digital Marketer",
+    "description": "Promote brands using online marketing strategies.",
+    "required_skills": [
+      "SEO",
+      "Social Media",
+      "Ads",
+      "Analytics"
+    ],
+    "roadmap_steps": [
+      "Basics",
+      "Certifications",
+      "Projects",
+      "Freelance",
+      "Jobs"
+    ],
+    "average_salary": {
+      "min": 350000,
+      "max": 1500000
+    },
+    "future_scope": "Digital-first world.",
+    "recommended_courses": [
+      {
+        "title": "Google Digital Marketing",
+        "platform": "Google"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "career_name": "UI/UX Designer",
+    "description": "Design user-friendly interfaces and experiences.",
+    "required_skills": [
+      "Figma",
+      "Wireframing",
+      "UX Research"
+    ],
+    "roadmap_steps": [
+      "Learn Figma",
+      "Design basics",
+      "Projects",
+      "Portfolio",
+      "Jobs"
+    ],
+    "average_salary": {
+      "min": 400000,
+      "max": 2000000
+    },
+    "future_scope": "Every app needs design.",
+    "recommended_courses": [
+      {
+        "title": "Google UX Design",
+        "platform": "Coursera"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "career_name": "Cybersecurity Analyst",
+    "description": "Protect systems and networks from cyber threats.",
+    "required_skills": [
+      "Networking",
+      "Ethical Hacking",
+      "Linux",
+      "Security Tools",
+      "Cryptography",
+      "Risk Analysis"
+    ],
+    "roadmap_steps": [
+      "Learn Networking basics",
+      "Linux fundamentals",
+      "Cybersecurity basics",
+      "Ethical hacking",
+      "Certifications (CEH, CompTIA Security+)",
+      "Hands-on labs",
+      "Apply for jobs"
+    ],
+    "average_salary": {
+      "min": 600000,
+      "max": 2500000
+    },
+    "future_scope": "Cyber threats rising.",
+    "recommended_courses": [
+      {
+        "title": "CompTIA Security+",
+        "platform": "CompTIA"
+      }
+    ]
+  }
+]
